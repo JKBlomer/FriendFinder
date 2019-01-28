@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SURVEY2</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+       
+        
+    <style>
+    
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 100px;
+  border: 1px solid #888;
+  width: 50%;
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class = "modalContainer">
+                <div id="myModal" class="modal">
+
+                        
+                        <div class="modal-content">
+                          <span class="close">&times;</span>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <p></p>
+                        </div>
+                      
+                      </div>
+        </div>
+        <div class="jumbotron">
+            <h1>The Survey Questions</h1>
+            <hr>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="inputNameHere">Your Name</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Enter name">
+
+            </div>
+            <div class="form-group">
+                <label for="inputImageLink">Link to Photo Image (required)</label>
+                <input type="text" class="form-control" id="inputImage" placeholder="Image Link">
+            </div>
+        </form>
+        <div class="card">
+            <div class="card-body">
+                <div class="q1">
+                    <h3>Question 1</h3>
+                    <p>You love to code</p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Select an Option
+                        </button>
+                        <div class="dropdown-menu menu-q1" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" data-val="1" href="#">1 (Strongly disagree)</a>
+                            <a class="dropdown-item" data-val="2" href="#">2</a>
+                            <a class="dropdown-item" data-val="3" href="#">3</a>
+                            <a class="dropdown-item" data-val="4" href="#">4</a>
+                            <a class="dropdown-item" data-val="5" href="#">5 (Strongly agree)</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="q2">
+                    <h3>Question 2</h3>
+                    <p>You notice the birds wherever you go</p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Select an Option
+                        </button>
+                        <div class="dropdown-menu menu-q2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" data-val="1" href="#">1 (Strongly disagree)</a>
+                            <a class="dropdown-item" data-val="2" href="#">2</a>
+                            <a class="dropdown-item" data-val="3" href="#">3</a>
+                            <a class="dropdown-item" data-val="4" href="#">4</a>
+                            <a class="dropdown-item" data-val="5" href="#">5 (Strongly agree)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="q3">
+                    <h3>Question 3</h3>
+                    <p>Salsa dancing is a great cardio workout</p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Select an Option
+                        </button>
+                        <div class="dropdown-menu menu-q3" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" data-val="1" href="#">1 (Strongly disagree)</a>
+                            <a class="dropdown-item" data-val="2" href="#">2</a>
+                            <a class="dropdown-item" data-val="3" href="#">3</a>
+                            <a class="dropdown-item" data-val="4" href="#">4</a>
+                            <a class="dropdown-item" data-val="5" href="#">5 (Strongly agree)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="q4">
+                    <h3>Question 4</h3>
+                    <p>You think Colorado is the greatest state</p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Select an Option
+                        </button>
+                        <div class="dropdown-menu menu-q4" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" data-val="1" href="#">1 (Strongly disagree)</a>
+                            <a class="dropdown-item" data-val="2" href="#">2</a>
+                            <a class="dropdown-item" data-val="3" href="#">3</a>
+                            <a class="dropdown-item" data-val="4" href="#">4</a>
+                            <a class="dropdown-item" data-val="5" href="#">5 (Strongly agree)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="q5">
+                    <h3>Question 5</h3>
+                    <p>You love to Mountain Bike</p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Select an Option
+                        </button>
+                        <div class="dropdown-menu menu-q5" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" data-val="1" href="#">1 (Strongly disagree)</a>
+                            <a class="dropdown-item" data-val="2" href="#">2</a>
+                            <a class="dropdown-item" data-val="3" href="#">3</a>
+                            <a class="dropdown-item" data-val="4" href="#">4</a>
+                            <a class="dropdown-item" data-val="5" href="#">5 (Strongly agree)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="q6">
+                    <h3>Question 6</h3>
+                    <p>You love to sleep in</p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Select an Option
+                        </button>
+                        <div class="dropdown-menu menu-q6" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" data-val="1" href="#">1 (Strongly disagree)</a>
+                            <a class="dropdown-item" data-val="2" href="#">2</a>
+                            <a class="dropdown-item" data-val="3" href="#">3</a>
+                            <a class="dropdown-item" data-val="4" href="#">4</a>
+                            <a class="dropdown-item" data-val="5" href="#">5 (Strongly agree)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="q7">
+                    <h3>Question 7</h3>
+                    <p>You make family a priority</p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Select an Option
+                        </button>
+                        <div class="dropdown-menu menu-q7" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" data-val="1" href="#">1 (Strongly disagree)</a>
+                            <a class="dropdown-item" data-val="2" href="#">2</a>
+                            <a class="dropdown-item" data-val="3" href="#">3</a>
+                            <a class="dropdown-item" data-val="4" href="#">4</a>
+                            <a class="dropdown-item" data-val="5" href="#">5 (Strongly agree)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="q8">
+                    <h3>Question 8</h3>
+                    <p>You have a purpose in life</p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Select an Option
+                        </button>
+                        <div class="dropdown-menu menu-q8" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" data-val="1" href="#">1 (Strongly disagree)</a>
+                            <a class="dropdown-item" data-val="2" href="#">2</a>
+                            <a class="dropdown-item" data-val="3" href="#">3</a>
+                            <a class="dropdown-item" data-val="4" href="#">4</a>
+                            <a class="dropdown-item" data-val="5" href="#">5 (Strongly agree)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="q9">
+                    <h3>Question 9</h3>
+                    <p>You notice wildflowers when outdoors</p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Select an Option
+                        </button>
+                        <div class="dropdown-menu menu-q9" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" data-val="1" href="#">1 (Strongly disagree)</a>
+                            <a class="dropdown-item" data-val="2" href="#">2</a>
+                            <a class="dropdown-item" data-val="3" href="#">3</a>
+                            <a class="dropdown-item" data-val="4" href="#">4</a>
+                            <a class="dropdown-item" data-val="5" href="#">5 (Strongly agree)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="q10">
+                    <h3>Question 10</h3>
+                    <p>You have to have coffee in the morning</p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Select an Option
+                        </button>
+                        <div class="dropdown-menu menu-q10" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" data-val="1" href="#">1 (Strongly disagree)</a>
+                            <a class="dropdown-item" data-val="2" href="#">2</a>
+                            <a class="dropdown-item" data-val="3" href="#">3</a>
+                            <a class="dropdown-item" data-val="4" href="#">4</a>
+                            <a class="dropdown-item" data-val="5" href="#">5 (Strongly agree)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="buttonSection">
+            <button type="submit" class="btn btn-primary submit-button">Submit Your Survey</button>
+            <a href="/"><button class="btn btn-primary"><span class="fa fa-plus"></span> Go Home</button></a>
+        </div>
+
+        <hr>
+    </div>
+
+    <script type="text/javascript">
+        var dropVal = "";
+        var surveyResults = [];
+
+        $(".dropdown-item").on("click", function (event) {
+
+            event.preventDefault();
+            dropVal = $(this).attr("data-val");
+            $(this).parents(".dropdown").find(".dropdown-toggle").text(dropVal);
+            $(this).parents(".dropdown").find(".dropdown-toggle").addClass("disabled");
+
+        });
+
+        $(".submit-button").on("click", function (event) {
+
+            event.preventDefault();
+            if ($("#inputName").val() == '' || $("#inputImage").val() == '') {
+                alert("Please fill out all input fields");
+                return;
+            }
+            addFriend = {
+                name: $("#inputName").val().trim(),
+                photo: $("#inputImage").val().trim(),
+                scores: [
+                    $(".menu-q1").parents(".dropdown").find(".dropdown-toggle").text(),
+                    $(".menu-q2").parents(".dropdown").find(".dropdown-toggle").text(),
+                    $(".menu-q3").parents(".dropdown").find(".dropdown-toggle").text(),
+                    $(".menu-q4").parents(".dropdown").find(".dropdown-toggle").text(),
+                    $(".menu-q5").parents(".dropdown").find(".dropdown-toggle").text(),
+                    $(".menu-q6").parents(".dropdown").find(".dropdown-toggle").text(),
+                    $(".menu-q7").parents(".dropdown").find(".dropdown-toggle").text(),
+                    $(".menu-q8").parents(".dropdown").find(".dropdown-toggle").text(),
+                    $(".menu-q9").parents(".dropdown").find(".dropdown-toggle").text(),
+                    $(".menu-q10").parents(".dropdown").find(".dropdown-toggle").text()
+                ]
+            };
+
+            $.post("/api/friends", addFriend).then(function (data) {
+                if (data) {
+                    alert("You have been added!");
+                }
+                alert("You perfect match is " + data);
+                $(".modal-content").text(data);
+                $("#myModal").show();
+                console.log(data);
+            });
+           
+        });
+    </script>
+</body>
+
+</html>
